@@ -50,7 +50,7 @@ class CustomCollector:
                 labels=["instance"],
             ),
             "TIMELEFT": GaugeMetricFamily(
-                "apcupsd_ups_battery_time_left_seconds",
+                "apcupsd_ups_battery_time_left_minutes",
                 "Remaining runtime left on battery as estimated by the UPS",
                 labels=["instance"],
             ),
