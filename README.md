@@ -26,3 +26,7 @@ docker run --rm apcupsd_exporter --port=8000
 ### `--port`
 
 The port on which to listen for Prometheus connections.
+
+## Credits
+
+The code for talking to the APC UPS has been lifted from [https://github.com/flyte/apcaccess](https://github.com/flyte/apcaccess) so thanks to Ellis Percival.

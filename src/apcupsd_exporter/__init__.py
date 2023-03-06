@@ -13,6 +13,13 @@ def parse_arguments(arguments: List[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(prog="apcupsd_exporter")
 
     parser.add_argument(
+        "--host",
+        dest="hosts",
+        action="append",
+        default=[],
+        help="the server and port running apcupsd",
+    )
+    parser.add_argument(
         "-p",
         "--port",
         dest="port",
@@ -48,6 +55,7 @@ def main() -> None:
 
     run(
         args.port,
+        args.hosts,
     )
 
 
