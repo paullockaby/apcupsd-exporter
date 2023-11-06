@@ -10,7 +10,7 @@ apcupsd_exporter = "apcupsd_exporter:main"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-prometheus-client = "^0.17.1"
+prometheus-client = "^0.18.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.2"
